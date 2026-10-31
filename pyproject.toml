@@ -1,0 +1,24 @@
+[project]
+name = "agenticai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "theanonymous183", email = "vivekyadav80853@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.4.7",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.7.3",
+    "langgraph>=1.2.19",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agenticai = "agenticai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
